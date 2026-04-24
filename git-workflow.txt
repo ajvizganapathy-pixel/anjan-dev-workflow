@@ -1,0 +1,108 @@
+# 🚀 ANJAN DEV WORKFLOW (REAL EXECUTION LOG)
+
+# -------------------------------
+# 📥 CLONE REPOSITORY
+# -------------------------------
+git clone git@github.com:ajvizganapathy-pixel/anjan-dev-workflow.git
+
+# Output:
+# Cloning into 'anjan-dev-workflow'...
+# Receiving objects: 100%
+
+
+# -------------------------------
+# 📂 ENTER PROJECT
+# -------------------------------
+cd anjan-dev-workflow
+ls
+
+# Output:
+# README.md
+
+
+# -------------------------------
+# ✏️ EDIT FILE
+# -------------------------------
+notepad README.md
+
+
+# -------------------------------
+# ⚠️ EXTRA STEP (NOT NEEDED)
+# -------------------------------
+git init
+
+# Output:
+# Reinitialized existing Git repository
+
+# 👉 Note:
+# This was unnecessary because repo was already cloned
+
+
+# -------------------------------
+# 📦 STAGE CHANGES
+# -------------------------------
+git add .
+
+
+# -------------------------------
+# 🧾 COMMIT
+# -------------------------------
+git commit -m "Initial workflow setup"
+
+# Output:
+# [main xxxx] Initial workflow setup
+# 1 file changed
+
+
+# -------------------------------
+# ⚠️ REMOTE ERROR
+# -------------------------------
+git remote add origin git@github.com:ajvizganapathy-pixel/anjan-dev-workflow.git
+
+# Error:
+# remote origin already exists
+
+# 👉 Cause:
+# Repo already has remote (because of clone)
+
+
+# -------------------------------
+# 🚀 PUSH TO GITHUB
+# -------------------------------
+git push -u origin main
+
+# Output:
+# Writing objects: 100%
+# To github.com:ajvizganapathy-pixel/anjan-dev-workflow.git
+# main -> main
+# branch 'main' set up to track 'origin/main'
+
+
+# -------------------------------
+# 🧠 FINAL WORKFLOW (CORRECT WAY)
+# -------------------------------
+# (After cloning, DO NOT use git init or add remote again)
+
+git add .
+git commit -m "update"
+git push
+
+
+# -------------------------------
+# ⚠️ LESSONS LEARNED
+# -------------------------------
+# - git clone already sets remote
+# - git init is NOT needed after clone
+# - git remote add origin will fail if already exists
+# - Always follow: add → commit → push
+
+
+# -------------------------------
+# ✅ FINAL STATE
+# -------------------------------
+# Repo cloned
+# File edited
+# Changes committed
+# Changes pushed successfully
+
+# 🚀 Workflow is fully working
